@@ -7,10 +7,3 @@ pages_build_output_dir = "dist"
 
 [site]
 bucket = "./dist"
-
-# Functions configuration
-[functions]
-directory = "functions"  
-
-# API keys and other secrets should be set using wrangler secrets
-[vars]
