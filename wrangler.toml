@@ -1,7 +1,14 @@
 name = "repo-name-whisperer"
-main = "src/worker.js"
+main = "workers/index.js"
 compatibility_date = "2024-01-14"
 
 # API keys and other secrets should be set using wrangler secrets
 # Use: wrangler secret put DEEPSEEK_API_KEY
 [vars]
+
+[build]
+command = "npm run build"  
+output = "dist"           
+
+[site]
+bucket = "./dist"         
