@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 渐变背景 -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f6bfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#845ef7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 主圆形背景 -->
+  <circle cx="256" cy="256" r="240" fill="url(#grad)" />
+  
+  <!-- 魔法星星效果 -->
+  <path d="M256 96L276 216L396 236L276 256L256 376L236 256L116 236L236 216L256 96Z" 
+        fill="white" opacity="0.9">
+    <animate attributeName="opacity" 
+             values="0.9;0.5;0.9" 
+             dur="2s" 
+             repeatCount="indefinite"/>
+  </path>
+  
+  <!-- 小装饰星星 -->
+  <circle cx="396" cy="116" r="20" fill="white" opacity="0.6">
+    <animate attributeName="opacity" 
+             values="0.6;0.3;0.6" 
+             dur="1.5s" 
+             repeatCount="indefinite"/>
+  </circle>
+  <circle cx="116" cy="396" r="20" fill="white" opacity="0.6">
+    <animate attributeName="opacity" 
+             values="0.6;0.3;0.6" 
+             dur="1.5s" 
+             repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- 代码符号 -->
+  <path d="M206 286L156 236L206 186M306 286L356 236L306 186" 
+        stroke="white" 
+        stroke-width="24" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        fill="none"/>
+</svg>
